@@ -4,7 +4,7 @@ Este es un script de automatización diseñado para corregir los fallos de rende
 
 > En español: Arregla las lineas de colores que aparecen en la terminal y algunas aplicaciones, afectando directamente a CPUs Intel de 2da generación en sistemas operativos ArchLinux.
 
-![Antes](https://github.com/NeTenebraes/Intel-Legacy-Buffer-Fix-Arch-Linux/blob/main/images/Antes.webp?raw=true)
+![Antes](https://github.com/NeTenebrae-Sec/intel-legacy-buffer-fix-arch-linux/blob/main/images/Antes.webp?raw=true)
 
 
 > [!WARNING]
@@ -35,11 +35,11 @@ Ejecuta el siguiente comando en tu terminal para aplicar el parche automáticame
 
 ### No SDDM
 ```bash
-curl -sL https://raw.githubusercontent.com/NeTenebraes/Intel-Legacy-Buffer-Fix-Arch-Linux/main/intel-legacy-fix.sh | sudo bash
+curl -sL https://raw.githubusercontent.com/NeTenebrae-Sec/intel-legacy-buffer-fix-arch-linux/main/intel-legacy-fix.sh | sudo bash
 ```
 ### SDDM Fix
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/NeTenebraes/Intel-Legacy-Buffer-Fix-Arch-Linux/main/intel-legacy-fix.sh) --sddm
+bash <(curl -sL https://raw.githubusercontent.com/NeTenebrae-Sec/intel-legacy-buffer-fix-arch-linux/main/intel-legacy-fix.sh) --sddm
 ```
 
 ## Detalles Técnicos: ¿Qué hace este script?
@@ -68,7 +68,7 @@ Al usar la bandera `--sddm`, el script genera `/etc/sddm.conf.d/10-mesa-legacy.c
 
 ## En resumen
 
-![Despues](https://github.com/NeTenebraes/Intel-Legacy-Buffer-Fix-Arch-Linux/blob/main/images/Despues.webp?raw=true)
+![Despues](https://github.com/NeTenebrae-Sec/intel-legacy-buffer-fix-arch-linux/blob/main/images/Despues.webp?raw=true)
 
 Al ejecutar el oneliner, resuelves el desborde matemático de la VRAM. El sistema operativo deja de exigirle a tu GPU Intel clásica funciones de renderizado modernas y la estabiliza en un modo óptimo y robusto de operación, obteniendo un entorno gráfico ligero e inmune a las rayas de corrupción de pantalla sin importar el zoom o los glifos que uses.
 
